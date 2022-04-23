@@ -14,33 +14,81 @@ const questions = () => {
         {
             type: 'input',
             name: 'github',
-            message: 'What is your GitHub username'
+            message: 'What is your GitHub username (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username!');
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: 'What is your email address?'
+            message: 'What is your email address?',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address!');
+                    return false;
+                }
+            },
         },
         {
             type: 'input',
             name: 'Title',
-            message: 'What is your Project title?'
+            message: 'What is your Project title?',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your Project Title!');
+                    return false;
+                }
+            },
         },
         {
             type: 'input',
             name: 'Description',
-            message: 'Provide a short description of your project.'
+            message: 'Provide a short description of your project.',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a short description of your project!');
+                    return false;
+                }
+            },
         },
         {
             type: 'checkbox',
             name: 'languages',
             message: 'What did you build this project with? (Check all that apply',
-            choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+            choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node'],
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please choose at least one!');
+                    return false;
+                }
+            },
         },
         {
             type: 'input',
             name: 'link',
-            message: 'Enter the GitHub link to your project. (Required)'
+            message: 'Enter the GitHub link to your project. (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub link to your project!');
+                    return false;
+                }
+            },
         },
     ]);
 };
