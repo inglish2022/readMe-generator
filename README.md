@@ -31,6 +31,8 @@
 
   ## Usage
   ![Gif Demo of readMe-generator](./video/ReadMe-generatorvideo.gif)
+
+  Or you can view video at this link - [Screencastify](https://drive.google.com/file/d/1gxSaMRl8dg1Ri23RAm2bH6E6EGrJGHGZ/view)
   
 
   Use generator to make a readMe
