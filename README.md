@@ -30,7 +30,8 @@
   The user needs to clone the respository and download Node.  It also requires Inquirer.
 
   ## Usage
-  ![AltText](./video/ReadMe-generatorvideo.gif)
+  ![Gif Demo of readMe-generator](./video/ReadMe-generatorvideo.gif)
+  
 
   Use generator to make a readMe
 
