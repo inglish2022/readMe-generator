@@ -1,16 +1,17 @@
 const generateMarkdown = data => {
-  return `# ${data.title}
+  return `# ${data.Title}
   ![license](license)
 
-  # <Your-Project-Title>
+  // # <Your-Project-Title>
+  // ${data.Title}
 
   ## Description
-  Provide a short description explaining the what, why, and how of your of your project.  Use the following questions as a guide:
+  ${data.Description}
 
-  * What was your motivation?
-  * Why did you build this project?
-  * What problem does it solve?
-  * What did you learn
+  * ${data.motivation}
+  
+  * ${data.problem}
+  
 
   ## Table of Contents (Optional)
 
@@ -25,23 +26,27 @@ const generateMarkdown = data => {
 
   ## Installation
 
-  What are the steps to install your project?
+  ${data.install}
 
   ## Usage
+  ${data.usage}
 
-  Provide instructions and examples for use
+  
 
   ## License
 
-  This project is licensed under MIT $(license)
+  This project is licensed under $(data.license)
 
   ## Contributing
+  ${data.contributors}
 
 
-  ## Tests
+
 
   ## Questions
   
+  If you have any questions, you can reach me at ${data.email}.
+  You can view all of my projects at https://github.com/${data.github}.
 
   `;
 

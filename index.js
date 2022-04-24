@@ -67,18 +67,60 @@ const questions = () => {
             },
         },
         {
+            type: 'input',
+            name: 'motivation',
+            message: 'What was your motivation for this project?'
+        },
+        {
+            type: 'input',
+            name: 'problem',
+            message: 'What problem does it solve?'
+        },
+        {
             type: 'checkbox',
-            name: 'languages',
-            message: 'What did you build this project with? (Check all that apply',
-            choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node'],
+            name: 'list',
+            message: 'What kind of license does your project have?',
+            choices: ['MIT', 'GNU'],
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please choose at least one!');
+                    console.log('Please choose one!');
                     return false;
                 }
             },
+        },
+        {
+            type: 'input',
+            name: 'install',
+            message: 'What are the steps required to install your project',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true
+                } else {
+                    console.log('Please enter steps required to install project');
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'How do you use this app?',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true
+                } else {
+                    console.log('Please enter usuage description!');
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'contributors',
+            message: 'Who contributed to this app?',
+            
         },
         {
             type: 'input',
@@ -97,8 +139,8 @@ const questions = () => {
 };
 // TODO: Create a function to write README file
 
-const writeToFile = data => {
-    fs.writeToFile('README.md', data, err =>  {
+const writeFile = data => {
+    fs.writeFile('README.md', data, err => {
         if (err) {
             console.log(err);
             return;
@@ -116,13 +158,13 @@ questions().then(answers => {
     return generatePage(answers);
 })
 
-.then(data =>  {
-    return writeToFile(data);
-})
+    .then(data => {
+        return writeFile(data);
+    })
 
-.catch(err =>  {
-    console.log(err)
-})
+    .catch(err => {
+        console.log(err)
+    })
 
 
 
