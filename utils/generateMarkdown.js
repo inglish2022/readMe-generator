@@ -1,6 +1,8 @@
 const generateMarkdown = data => {
   return `# ${data.title}
-  ![Github license]
+  ![license](license)
+
+  # <Your-Project-Title>
 
   ## Description
   Provide a short description explaining the what, why, and how of your of your project.  Use the following questions as a guide:
@@ -27,10 +29,11 @@ const generateMarkdown = data => {
 
   ## Usage
 
-  Provide instructions and exaples for use
+  Provide instructions and examples for use
 
   ## License
 
+  This project is licensed under MIT $(license)
 
   ## Contributing
 

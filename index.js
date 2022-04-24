@@ -96,7 +96,17 @@ const questions = () => {
     ]);
 };
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+
+const writeToFile = data => {
+    fs.writeToFile('README.md', data, err =>  {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log('Your readMe has been successfully created.');
+        }
+    })
+};
 
 
 
@@ -105,6 +115,16 @@ const questions = () => {
 questions().then(answers => {
     return generatePage(answers);
 })
+
+.then(data =>  {
+    return writeToFile(data);
+})
+
+.catch(err =>  {
+    console.log(err)
+})
+
+
 
 
 
