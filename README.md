@@ -1,15 +1,15 @@
-# ReadMe generator
+# TTTTTT tops
   
 
   
 
   ## Description
 
-  generates readmes
+  tryign it out
 
-  * to get a good grad
+  * life
   
-  * better future
+  * better life
   
 
   ## Table of Contents (Optional)
@@ -27,11 +27,11 @@
 
   ## Installation
 
-  same as others
+  same
 
   ## Usage
 
-  answer questions
+  try it out
 
   
 
@@ -41,14 +41,14 @@
 
   ## Contributing
   
-  me and some help
+  i did
 
 
 
 
   ## Questions
   
-  If you have any questions, you can reach me at inglish.fosut@gmail.com.
-  You can view all of my projects at https://github.com/inglish2022.
+  If you have any questions, you can reach me at teri@gmail.
+  You can view all of my projects at https://github.com/teriiiii.
 
   
