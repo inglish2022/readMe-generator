@@ -1,19 +1,33 @@
-const generateMarkdown = data =>  {
+const generateMarkdown = data => {
   return `# ${data.title}
   ![Github license]
 
   ## Description
+  Provide a short description explaining the what, why, and how of your of your project.  Use the following questions as a guide:
 
+  * What was your motivation?
+  * Why did you build this project?
+  * What problem does it solve?
+  * What did you learn
 
-  ## Table of CountQueuingStrategy
+  ## Table of Contents (Optional)
+
+  If your README is long, add a table of contents to make it easy for users
+
+  *[Installation](#installation)
+  *[Usage](#usage)
+  *[Credits](#credits)
+  *[License](#license)
 
 
 
   ## Installation
 
-
+  What are the steps to install your project?
 
   ## Usage
+
+  Provide instructions and exaples for use
 
   ## License
 
@@ -27,7 +41,7 @@ const generateMarkdown = data =>  {
   
 
   `;
-  
+
 }
 
 
