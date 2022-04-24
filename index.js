@@ -78,7 +78,7 @@ const questions = () => {
         },
         {
             type: 'checkbox',
-            name: 'list',
+            name: 'license',
             message: 'What kind of license does your project have?',
             choices: ['MIT', 'GNU'],
             validate: nameInput => {
@@ -170,22 +170,7 @@ questions().then(answers => {
 
 
 
-// TODO: Create a function to initialize app
-// function init() {}
 
-// Function call to initialize app
-// init();
-
-
-
-
-
-// const pageHTML = generatePage(projectTitle, github);
-// fs.writeFile('./index.html', generatePage(projectTitle, github), err =>  {
-    // if (err) throw err;
-
-    // console.log('ReadMe complete! Check out index.html')
-// })
 
 
 

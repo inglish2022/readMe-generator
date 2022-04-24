@@ -1,11 +1,11 @@
 const generateMarkdown = data => {
   return `# ${data.Title}
-  ![license](license)
+  
 
-  // # <Your-Project-Title>
-  // ${data.Title}
+  
 
   ## Description
+
   ${data.Description}
 
   * ${data.motivation}
@@ -15,11 +15,13 @@ const generateMarkdown = data => {
 
   ## Table of Contents (Optional)
 
-  If your README is long, add a table of contents to make it easy for users
+  
+  *[Installation](#installation) 
 
-  *[Installation](#installation)
-  *[Usage](#usage)
+  *[Usage](#usage)  
+
   *[Credits](#credits)
+  
   *[License](#license)
 
 
@@ -29,15 +31,17 @@ const generateMarkdown = data => {
   ${data.install}
 
   ## Usage
+
   ${data.usage}
 
   
 
   ## License
 
-  This project is licensed under $(data.license)
+  This project is licensed under ${data.license}
 
   ## Contributing
+  
   ${data.contributors}
 
 
